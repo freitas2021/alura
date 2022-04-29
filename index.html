@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Criptografia</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Encriptador Alura</h1>
+
+    <div class="container">
+      <div class="mensagem">
+
+        <input type="text" id = "campo1" placeholder="Digite sua mensagem" />
+
+        <div class="bts">
+          <button id="btn1" onclick="encriptar()">Encriptar</button>
+          <button id="btn2" onclick="desencriptar()">Desencriptar</button>
+        </div>
+      </div>
+
+      <div class="resultado">
+        <input type="text" name="resultado" id="campo2" />
+
+          <div class="cp">
+            <button onclick = "copyToClipBoard()" class="copiar">Copiar</button>
+          </div>
+      </div>
+    </div>
+
+    <script src="encripter.js"></script>
+  </body>
+</html>
