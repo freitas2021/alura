@@ -8,10 +8,10 @@ function encriptar() {
       .replace(/a/gim, "ai")
       .replace(/o/gim, "ober")
       .replace(/u/gim, "ufat");
-
-    document.getElementById("campo1").value = "";
+      
+      document.getElementById("campo1").value = "";
+    }
   }
-}
 
 function desencriptar() {
   result.value = campo1.value
@@ -20,6 +20,8 @@ function desencriptar() {
     .replace(/ai/gim, "a")
     .replace(/ober/gim, "o")
     .replace(/ufat/gim, "u");
+  document.getElementById("campo1").value = "";  
+
 }
 
 function copyToClipBoard() {
