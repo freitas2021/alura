@@ -3,33 +3,26 @@ function encriptar() {
     alert("digite algum texto");
   } else {
     result.value = campo1.value
-      .replace(/[e|é|è|ê|ể|ë]/g, "enter")
-      .replace(/[i|í|ì|î]/g, "imea")
-      .replace(/[a|à|á|â|ã|ä|å]/g, "ai")
-      .replace(/[o|ó|ò|ô|ö]/g, "ober")
-      .replace(/[u|ú|ù|ü]/g, "ufat")
-      .replace(/[$|@|!|*|%||¨|{|}|#]/, " ");
+      .replace(/e/gim, "enter")
+      .replace(/i/gim, "imes")
+      .replace(/a/gim, "ai")
+      .replace(/o/gim, "ober")
+      .replace(/u/gim, "ufat");
 
     document.getElementById("campo1").value = "";
   }
 }
 
 function desencriptar() {
-  result.value = campo1.value 
-    .replace(/enter/g, "e")
-    .replace(/imea/g, "i")
-    .replace(/ai/g, "a")
-    .replace(/ober/g, "o")
-    .replace(/ufat/g, "u")
-    .replace(/[$|@|!|*|%||¨|{|}|#]/, " ");
-
-  result.value = "";
+  result.value = campo1.value
+    .replace(/enter/gim, "e")
+    .replace(/imes/gim, "i")
+    .replace(/ai/gim, "a")
+    .replace(/ober/gim, "o")
+    .replace(/ufat/gim, "u");
 }
 
 function copyToClipBoard() {
-  var content = document.getElementById("result");
-
-  content.select();
-  document.execCommand("copy");
+  navigator.clipboard.writeText(result.value);
   document.getElementById("result").value = "";
 }
