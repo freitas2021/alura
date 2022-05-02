@@ -4,15 +4,22 @@
     <meta charset="utf-8" />
     <title>Criptografia</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <h1>Encriptador Alura</h1>
+    <header>
 
+      <h1><img src="img/Vector.png" alt="logo Alura"></h1>
+    </header>
     <div class="container">
       <div class="mensagem">
-
-        <input type="text" id ="campo1" placeholder="Digite sua mensagem" />
+        <input type="text" id="campo1" placeholder="Digite sua mensagem" />
 
         <div class="bts">
           <button id="btn1" onclick="encriptar()">Encriptar</button>
@@ -23,9 +30,11 @@
       <div class="resultado">
         <input type="text" name="resultado" id="result" />
 
-          <div class="cp">
-            <button onclick = "copyToClipBoard()" class="copiar">Copiar</button>
-          </div>
+        <div class="cp">
+          <button class="copy" onclick="copyToClipBoard()" class="copiar">
+            Copiar
+          </button>
+        </div>
       </div>
     </div>
 
