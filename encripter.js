@@ -10,6 +10,7 @@ function encriptar() {
       .replace(/u/gim, "ufat");
       
       document.getElementById("campo1").value = "";
+      document.querySelector(".imagem").style.display = "hidden";
     }
   }
 

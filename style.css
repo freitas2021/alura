@@ -13,6 +13,7 @@ h1{
   height: 100vh;
   display: flex;
   justify-content: center;
+  margin-left: 15px;
   
 
 }
@@ -26,7 +27,13 @@ h1{
   border-radius: 32px;
   background-color: #F3F5FC;
 }
-
+.resultado{
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
 #result{
   line-height: 400px;
   padding: 10px;
@@ -35,6 +42,15 @@ h1{
   resize: none;
   border-radius: 32px;
   background-color: #ffffff;
+  display: flex;
+  position: absolute;
+}
+.imagem{
+  justify-content: center;
+  position: relative;
+  width: 200px;
+  margin-top: 20px;
+  visibility: visible;
 }
 .bts{
  text-align: center;
@@ -67,6 +83,7 @@ font-size: 16px;
 
 .cp{
   text-align: center;
+  margin-bottom: 50px;
 }
 .copy{
   width: 100px;
@@ -78,5 +95,6 @@ font-size: 16px;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
+  
 
 }
