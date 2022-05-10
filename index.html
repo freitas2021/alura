@@ -10,16 +10,26 @@
       href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/474df5952c.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
     <header>
-
-      <h1><img src="img/Vector.png" alt="logo Alura"></h1>
+      <h1><img src="img/Vector.png" alt="logo Alura" /></h1>
+      <ul>
+        <li><i class="fa-brands fa-github-square"></i></li>
+        <li><i class="fa-brands fa-linkedin"></i></li>
+      </ul>
     </header>
     <div class="container">
       <div class="mensagem">
         <input type="text" id="campo1" placeholder="Digite sua mensagem" />
+        <div class="erro">
+          <small>Digite apenas letras minúsculas e sem acentos.</small>
+        </div>
 
         <div class="bts">
           <button id="btn1" onclick="encriptar()">Encriptar</button>
@@ -29,8 +39,7 @@
 
       <div class="resultado">
         <input type="text" name="resultado" id="result" />
-        <img class='imagem'src="img/High quality products 1 1.svg" alt="">
-        
+
         <div class="cp">
           <button class="copy" onclick="copyToClipBoard()" class="copiar">
             Copiar

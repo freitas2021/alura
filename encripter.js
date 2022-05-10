@@ -8,11 +8,11 @@ function encriptar() {
       .replace(/a/gim, "ai")
       .replace(/o/gim, "ober")
       .replace(/u/gim, "ufat");
-      
-      document.getElementById("campo1").value = "";
-      document.querySelector(".imagem").style.display = "hidden";
-    }
+
+    document.getElementById("campo1").value = "";
+    result.style.background = "none";
   }
+}
 
 function desencriptar() {
   result.value = campo1.value
@@ -21,11 +21,11 @@ function desencriptar() {
     .replace(/ai/gim, "a")
     .replace(/ober/gim, "o")
     .replace(/ufat/gim, "u");
-  document.getElementById("campo1").value = "";  
-
+  document.getElementById("campo1").value = "";
 }
 
 function copyToClipBoard() {
   navigator.clipboard.writeText(result.value);
   document.getElementById("result").value = "";
+  result.style.background = "visible";
 }
